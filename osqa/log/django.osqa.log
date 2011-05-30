@@ -1,0 +1,1124 @@
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-23 08:42:26,271 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/twitter/signin/
+        USER: <anonymous>
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: www.duke-exchange.com
+		mod_wsgi.listener_host: 
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /account/twitter/signin/
+		HTTP_FROM: googlebot(at)googlebot.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+		HTTP_CONNECTION: close
+		SERVER_NAME: www.duke-exchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/account/twitter/signin/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0xa0cc700>
+		HTTP_HOST: www.duke-exchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/twitter/signin/
+		HTTP_ACCEPT: */*
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 66.249.67.247
+		wsgi.errors: <mod_wsgi.Log object at 0x98d5688>
+		REMOTE_PORT: 34972
+		HTTP_X_FORWARDED_HOST: www.duke-exchange.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xa3c2380>
+		HTTP_ACCEPT_ENCODING: gzip,deflate
+
+        COOKIES:
+        None
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/auth.py", line 92, in prepare_provider_signin
+		    kwargs={'provider': provider}))
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/oauthauth/consumer.py", line 26, in prepare_authentication_request
+		    request_token = self.fetch_request_token()
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/oauthauth/consumer.py", line 54, in fetch_request_token
+		    response = urllib2.urlopen(full_url)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 126, in urlopen
+		    return _opener.open(url, data, timeout)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 397, in open
+		    response = meth(req, response)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 510, in http_response
+		    'http', request, response, code, msg, hdrs)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 435, in error
+		    return self._call_chain(*args)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 369, in _call_chain
+		    result = func(*args)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 518, in http_error_default
+		    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+		HTTPError: HTTP Error 401: Unauthorized
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-23 18:03:16,096 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/twitter/signin/
+        USER: <anonymous>
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: www.duke-exchange.com
+		mod_wsgi.listener_host: 
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /account/twitter/signin/
+		HTTP_FROM: googlebot(at)googlebot.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+		HTTP_CONNECTION: close
+		SERVER_NAME: www.duke-exchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/account/twitter/signin/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x98d5778>
+		HTTP_HOST: www.duke-exchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/twitter/signin/
+		HTTP_ACCEPT: */*
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 66.249.67.247
+		wsgi.errors: <mod_wsgi.Log object at 0x98d5a20>
+		REMOTE_PORT: 51516
+		HTTP_X_FORWARDED_HOST: www.duke-exchange.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x98b3f08>
+		HTTP_ACCEPT_ENCODING: gzip,deflate
+
+        COOKIES:
+        None
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/auth.py", line 92, in prepare_provider_signin
+		    kwargs={'provider': provider}))
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/oauthauth/consumer.py", line 26, in prepare_authentication_request
+		    request_token = self.fetch_request_token()
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/oauthauth/consumer.py", line 54, in fetch_request_token
+		    response = urllib2.urlopen(full_url)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 126, in urlopen
+		    return _opener.open(url, data, timeout)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 397, in open
+		    response = meth(req, response)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 510, in http_response
+		    'http', request, response, code, msg, hdrs)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 435, in error
+		    return self._call_chain(*args)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 369, in _call_chain
+		    result = func(*args)
+		  File "/usr/local/lib/python2.6/urllib2.py", line 518, in http_error_default
+		    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+		HTTPError: HTTP Error 401: Unauthorized
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:06:42,765 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.py'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:06:42,765 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.py'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:06:42,903 MSG: __init__.py:get_modules_script:27 Error importing urls from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.py'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/urls.py", line 4, in <module>
+    import views as app
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/views.py", line 6, in <module>
+    from forms import ClassicRegisterForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:20:05,456 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:20:05,456 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:20:05,540 MSG: __init__.py:get_modules_script:27 Error importing urls from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/urls.py", line 4, in <module>
+    import views as app
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/views.py", line 6, in <module>
+    from forms import ClassicRegisterForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:23:56,877 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:23:56,878 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:23:56,981 MSG: __init__.py:get_modules_script:27 Error importing urls from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/urls.py", line 4, in <module>
+    import views as app
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/views.py", line 6, in <module>
+    from forms import ClassicRegisterForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:34:13,109 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.localauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/forms.py", line 13
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:34:13,109 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:34:13,110 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.localauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/forms.py", line 13
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:34:13,110 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:34:13,203 MSG: __init__.py:get_modules_script:27 Error importing urls from module <module 'osqa.forum_modules.localauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/urls.py", line 4, in <module>
+    import views as app
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/views.py", line 6, in <module>
+    from forms import ClassicRegisterForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/forms.py", line 13
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:34:13,205 MSG: __init__.py:get_modules_script:27 Error importing urls from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/urls.py", line 4, in <module>
+    import views as app
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/views.py", line 6, in <module>
+    from forms import ClassicRegisterForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:37:33,196 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:37:33,197 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:37:33,292 MSG: __init__.py:get_modules_script:27 Error importing urls from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/urls.py", line 4, in <module>
+    import views as app
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/views.py", line 6, in <module>
+    from forms import ClassicRegisterForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:39:51,038 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:39:51,038 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:39:51,139 MSG: __init__.py:get_modules_script:27 Error importing urls from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/urls.py", line 4, in <module>
+    import views as app
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/views.py", line 6, in <module>
+    from forms import ClassicRegisterForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:42:50,068 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:42:50,069 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:42:50,184 MSG: __init__.py:get_modules_script:27 Error importing urls from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/urls.py", line 4, in <module>
+    import views as app
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/views.py", line 6, in <module>
+    from forms import ClassicRegisterForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:49:19,045 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:49:19,046 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 00:49:19,235 MSG: __init__.py:get_modules_script:27 Error importing urls from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/urls.py", line 4, in <module>
+    import views as app
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/views.py", line 6, in <module>
+    from forms import ClassicRegisterForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 01:08:25,391 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 01:08:25,391 MSG: __init__.py:get_modules_script:27 Error importing authentication from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/authentication.py", line 2, in <module>
+    from forms import ClassicLoginForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-05-24 01:08:25,462 MSG: __init__.py:get_modules_script:27 Error importing urls from module <module 'osqa.forum_modules.dukeauth' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/urls.py", line 4, in <module>
+    import views as app
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/views.py", line 6, in <module>
+    from forms import DukeRegisterForm
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/dukeauth/forms.py", line 12
+    CONST_DUKE_EMAIL_DOMAIN = "@duke.edu" #domain all emails must match
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-24 10:49:35,284 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/local/register/
+        USER: <anonymous>
+        METHOD: POST
+        POST PARAMETERS:
+        		username: test
+		password1: pass
+		password2: pass
+		bnewaccount: Signup
+		next: /
+		email: zgm3@gmail.com
+
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: www.duke-exchange.com
+		HTTP_REFERER: http://www.duke-exchange.com/account/local/register/
+		HTTP_ACCEPT_LANGUAGE: en-us
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: POST
+		PATH_INFO: /account/local/register/
+		HTTP_ORIGIN: http://www.duke-exchange.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		CONTENT_LENGTH: 94
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: sessionid=fdab6a1f217b8aa131a1ee361a385449; fc=fcVal=8824430595073044066
+		SERVER_NAME: www.duke-exchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/account/local/register/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x94a1e80>
+		HTTP_HOST: www.duke-exchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/local/register/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x93eeb10>
+		REMOTE_PORT: 32867
+		HTTP_X_FORWARDED_HOST: www.duke-exchange.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		CONTENT_TYPE: application/x-www-form-urlencoded
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x943a9b0>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: fdab6a1f217b8aa131a1ee361a385449
+		fc: fcVal=8824430595073044066
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/views.py", line 14, in register
+		    if form.is_valid():
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/forms.py", line 35, in is_valid
+		    testEmail = email.strip() #remove leading and trailing whitespace
+		NameError: global name 'email' is not defined
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-24 10:50:06,275 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/local/register/
+        USER: <anonymous>
+        METHOD: POST
+        POST PARAMETERS:
+        		username: zgm3
+		password1: java
+		password2: java
+		bnewaccount: Signup
+		next: /
+		email: zgm3@duke.edu
+
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: www.duke-exchange.com
+		HTTP_REFERER: http://www.duke-exchange.com/account/local/register/
+		HTTP_ACCEPT_LANGUAGE: en-us
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: POST
+		PATH_INFO: /account/local/register/
+		HTTP_ORIGIN: http://www.duke-exchange.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		CONTENT_LENGTH: 93
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: sessionid=fdab6a1f217b8aa131a1ee361a385449; fc=fcVal=8824430595073044066
+		SERVER_NAME: www.duke-exchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/account/local/register/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x943b930>
+		HTTP_HOST: www.duke-exchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/local/register/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x943b368>
+		REMOTE_PORT: 32945
+		HTTP_X_FORWARDED_HOST: www.duke-exchange.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		CONTENT_TYPE: application/x-www-form-urlencoded
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x93a8c38>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: fdab6a1f217b8aa131a1ee361a385449
+		fc: fcVal=8824430595073044066
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/views.py", line 14, in register
+		    if form.is_valid():
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/forms.py", line 35, in is_valid
+		    testEmail = email.strip() #remove leading and trailing whitespace
+		NameError: global name 'email' is not defined
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-24 11:48:20,959 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/local/register/
+        USER: <anonymous>
+        METHOD: POST
+        POST PARAMETERS:
+        		username: zgm3
+		password1: java
+		password2: java
+		bnewaccount: Signup
+		next: /
+		email: zgm3@duke.edu
+
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: www.duke-exchange.com
+		HTTP_REFERER: http://www.duke-exchange.com/account/local/register/
+		HTTP_ACCEPT_LANGUAGE: en-us
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: POST
+		PATH_INFO: /account/local/register/
+		HTTP_ORIGIN: http://www.duke-exchange.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		CONTENT_LENGTH: 93
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: sessionid=fdab6a1f217b8aa131a1ee361a385449; fc=fcVal=8824430595073044066
+		SERVER_NAME: www.duke-exchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/account/local/register/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x8cadb88>
+		HTTP_HOST: www.duke-exchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/local/register/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x8c3c4a8>
+		REMOTE_PORT: 58777
+		HTTP_X_FORWARDED_HOST: www.duke-exchange.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		CONTENT_TYPE: application/x-www-form-urlencoded
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x8c39ad0>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: fdab6a1f217b8aa131a1ee361a385449
+		fc: fcVal=8824430595073044066
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/views.py", line 14, in register
+		    if form.is_valid():
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/forms.py", line 35, in is_valid
+		    testEmail = self.email.strip() #remove leading and trailing whitespace
+		AttributeError: 'ClassicRegisterForm' object has no attribute 'email'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-24 12:01:37,692 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/local/register/
+        USER: <anonymous>
+        METHOD: POST
+        POST PARAMETERS:
+        		username: zgm3
+		password1: java
+		password2: java
+		bnewaccount: Signup
+		next: /
+		email: zgm3@duke.edu
+
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: www.duke-exchange.com
+		HTTP_REFERER: http://www.duke-exchange.com/account/local/register/
+		HTTP_ACCEPT_LANGUAGE: en-us
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: POST
+		PATH_INFO: /account/local/register/
+		HTTP_ORIGIN: http://www.duke-exchange.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		CONTENT_LENGTH: 93
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: sessionid=fdab6a1f217b8aa131a1ee361a385449; fc=fcVal=8824430595073044066
+		SERVER_NAME: www.duke-exchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/account/local/register/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x9b4cb38>
+		HTTP_HOST: www.duke-exchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/local/register/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x9b9a3e0>
+		REMOTE_PORT: 53072
+		HTTP_X_FORWARDED_HOST: www.duke-exchange.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		CONTENT_TYPE: application/x-www-form-urlencoded
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x9b98ad0>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: fdab6a1f217b8aa131a1ee361a385449
+		fc: fcVal=8824430595073044066
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/views.py", line 14, in register
+		    if form.is_valid():
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/forms.py", line 35, in is_valid
+		    testEmail = form.cleaned_data['email'].strip() #remove leading and trailing whitespace
+		NameError: global name 'form' is not defined
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-24 12:03:48,521 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/local/register/
+        USER: <anonymous>
+        METHOD: POST
+        POST PARAMETERS:
+        		username: zgm3
+		password1: java
+		password2: java
+		bnewaccount: Signup
+		next: /
+		email: zgm3@duke.edu
+
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: www.duke-exchange.com
+		HTTP_REFERER: http://www.duke-exchange.com/account/local/register/
+		HTTP_ACCEPT_LANGUAGE: en-us
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: POST
+		PATH_INFO: /account/local/register/
+		HTTP_ORIGIN: http://www.duke-exchange.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		CONTENT_LENGTH: 93
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: sessionid=fdab6a1f217b8aa131a1ee361a385449; fc=fcVal=8824430595073044066
+		SERVER_NAME: www.duke-exchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/account/local/register/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0xa53eac0>
+		HTTP_HOST: www.duke-exchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/local/register/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0xa4ce250>
+		REMOTE_PORT: 53347
+		HTTP_X_FORWARDED_HOST: www.duke-exchange.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		CONTENT_TYPE: application/x-www-form-urlencoded
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xa4c8ad0>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: fdab6a1f217b8aa131a1ee361a385449
+		fc: fcVal=8824430595073044066
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/views.py", line 14, in register
+		    if form.is_valid():
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/forms.py", line 35, in is_valid
+		    testEmail = self.cleaned_data['email'].strip() #remove leading and trailing whitespace
+		AttributeError: 'ClassicRegisterForm' object has no attribute 'cleaned_data'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-25 01:34:30,094 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/local/register/
+        USER: <anonymous>
+        METHOD: POST
+        POST PARAMETERS:
+        		username: zgm3
+		password1: asdf
+		password2: asdf
+		bnewaccount: Signup
+		next: /
+		email: zgm3@duke.edu
+
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: www.duke-exchange.com
+		HTTP_REFERER: http://www.duke-exchange.com/account/local/register/
+		HTTP_ACCEPT_LANGUAGE: en-us
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: POST
+		PATH_INFO: /account/local/register/
+		HTTP_ORIGIN: http://www.duke-exchange.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		CONTENT_LENGTH: 93
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: sessionid=fdab6a1f217b8aa131a1ee361a385449; fc=fcVal=8824430595073044066
+		SERVER_NAME: www.duke-exchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/account/local/register/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x8d5bde0>
+		HTTP_HOST: www.duke-exchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/local/register/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.7
+		wsgi.errors: <mod_wsgi.Log object at 0x8d5bf98>
+		REMOTE_PORT: 41625
+		HTTP_X_FORWARDED_HOST: www.duke-exchange.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		CONTENT_TYPE: application/x-www-form-urlencoded
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x8cf0728>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: fdab6a1f217b8aa131a1ee361a385449
+		fc: fcVal=8824430595073044066
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/views.py", line 14, in register
+		    if form.is_valid():
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 121, in is_valid
+		    return self.is_bound and not bool(self.errors)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 112, in _get_errors
+		    self.full_clean()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 267, in full_clean
+		    self._clean_fields()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 284, in _clean_fields
+		    value = field.clean(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/forms/general.py", line 118, in clean
+		    if email.to_python(value).strip().endswith('@duke.edu'):
+		AttributeError: 'unicode' object has no attribute 'to_python'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-26 02:17:05,313 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /admin/settings/basic/
+        USER: Zach Michaelov (1)
+        METHOD: POST
+        POST PARAMETERS:
+        		CONTACT_URL: mailto: admin@www.duke-exchange.com
+		submit: Save
+		APP_KEYWORDS: Duke,OSQA,forum,community
+		APP_DESCRIPTION: Ask and answer questions.
+		APP_SHORT_NAME: DukeExchange
+		APP_LOGO_old: /upfiles/logo_horiz_transparent.png
+		APP_FAVICON_old: /upfiles/vertical_dod.jpg
+		SUPPORT_URL: mailto: support@www.duke-exchange.com
+		APP_COPYRIGHT: Copyright OSQA, 2010. Some rights reserved under creative commons license.
+		APP_TITLE: DukeExchange: Q&A For Duke
+		APP_FAVICON: 
+
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: www.duke-exchange.com
+		HTTP_REFERER: http://www.duke-exchange.com/admin/settings/basic/
+		HTTP_ACCEPT_LANGUAGE: en-us
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: POST
+		PATH_INFO: /admin/settings/basic/
+		HTTP_ORIGIN: http://www.duke-exchange.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		CONTENT_LENGTH: 17828
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: sessionid=879c61bd1c81b56a38e84bd3fc11d089; fc=fcVal=8824430595073044066
+		SERVER_NAME: www.duke-exchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/admin/settings/basic/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0xad516b0>
+		HTTP_HOST: www.duke-exchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /admin/settings/basic/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.7
+		wsgi.errors: <mod_wsgi.Log object at 0xab884a8>
+		REMOTE_PORT: 46815
+		HTTP_X_FORWARDED_HOST: www.duke-exchange.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		CONTENT_TYPE: multipart/form-data; boundary=----WebKitFormBoundaryAIE3B3wVXuyeAqC1
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xaf65b60>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: 879c61bd1c81b56a38e84bd3fc11d089
+		fc: fcVal=8824430595073044066
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/admin.py", line 28, in wrapper
+		    return fn(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/admin.py", line 37, in wrapper
+		    res = fn(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/admin.py", line 146, in settings_set
+		    if form.is_valid():
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 121, in is_valid
+		    return self.is_bound and not bool(self.errors)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 112, in _get_errors
+		    self.full_clean()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 267, in full_clean
+		    self._clean_fields()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 278, in _clean_fields
+		    value = field.widget.value_from_datadict(self.data, self.files, self.add_prefix(name))
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/settings/forms.py", line 76, in value_from_datadict
+		    raise Exception('File type not allowed')
+		Exception: File type not allowed
+		
+
+        
