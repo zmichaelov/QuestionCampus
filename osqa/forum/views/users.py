@@ -56,7 +56,7 @@ class UserAnswersPaginatorContext(pagination.PaginatorContext):
 
 USERS_PAGE_SIZE = 35# refactor - move to some constants file
 
-@decorators.render('users/users.html', 'users', _('users'), weight=200)
+@decorators.render('users/users.html', 'users', _('users'), weight=200, tabbed=False)
 def users(request):
     suser = request.REQUEST.get('q', "")
     users = User.objects.all()

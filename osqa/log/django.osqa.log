@@ -1122,3 +1122,1166 @@ IndentationError: unexpected indent
 		
 
         
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-31 12:09:03,747 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x8f6d098>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x8f6d250>
+		REMOTE_PORT: 52341
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x90b4890>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 105, in questions
+		    return question_list(request, Question.objects.filter(tags='pratt'), _('questions'))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 141, in filter
+		    return self.get_query_set().filter(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 556, in filter
+		    return self._filter_or_exclude(False, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 574, in _filter_or_exclude
+		    clone.query.add_q(Q(*args, **kwargs))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1152, in add_q
+		    can_reuse=used_aliases)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1092, in add_filter
+		    connector)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 67, in add
+		    value = obj.prepare(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 316, in prepare
+		    return self.field.get_prep_lookup(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 134, in get_prep_lookup
+		    return self._pk_trace(value, 'get_prep_lookup', lookup_type)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 196, in _pk_trace
+		    v = getattr(field, prep_func)(lookup_type, v, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 292, in get_prep_lookup
+		    return self.get_prep_value(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 479, in get_prep_value
+		    return int(value)
+		ValueError: invalid literal for int() with base 10: 'pratt'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-31 12:09:18,184 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/questions/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x8d30a98>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x8f59ef8>
+		REMOTE_PORT: 52383
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x90b4ec0>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 105, in questions
+		    return question_list(request, Question.objects.filter(tags='pratt'), _('questions'))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 141, in filter
+		    return self.get_query_set().filter(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 556, in filter
+		    return self._filter_or_exclude(False, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 574, in _filter_or_exclude
+		    clone.query.add_q(Q(*args, **kwargs))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1152, in add_q
+		    can_reuse=used_aliases)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1092, in add_filter
+		    connector)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 67, in add
+		    value = obj.prepare(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 316, in prepare
+		    return self.field.get_prep_lookup(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 134, in get_prep_lookup
+		    return self._pk_trace(value, 'get_prep_lookup', lookup_type)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 196, in _pk_trace
+		    v = getattr(field, prep_func)(lookup_type, v, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 292, in get_prep_lookup
+		    return self.get_prep_value(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 479, in get_prep_value
+		    return int(value)
+		ValueError: invalid literal for int() with base 10: 'pratt'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-31 12:09:20,280 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/questions/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x8f4b048>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x8fba070>
+		REMOTE_PORT: 52386
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb7d2c2a8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 105, in questions
+		    return question_list(request, Question.objects.filter(tags='pratt'), _('questions'))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 141, in filter
+		    return self.get_query_set().filter(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 556, in filter
+		    return self._filter_or_exclude(False, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 574, in _filter_or_exclude
+		    clone.query.add_q(Q(*args, **kwargs))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1152, in add_q
+		    can_reuse=used_aliases)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1092, in add_filter
+		    connector)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 67, in add
+		    value = obj.prepare(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 316, in prepare
+		    return self.field.get_prep_lookup(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 134, in get_prep_lookup
+		    return self._pk_trace(value, 'get_prep_lookup', lookup_type)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 196, in _pk_trace
+		    v = getattr(field, prep_func)(lookup_type, v, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 292, in get_prep_lookup
+		    return self.get_prep_value(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 479, in get_prep_value
+		    return int(value)
+		ValueError: invalid literal for int() with base 10: 'pratt'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-31 12:09:21,593 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/questions/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x901af70>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x8fac958>
+		REMOTE_PORT: 52387
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb34262f0>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 105, in questions
+		    return question_list(request, Question.objects.filter(tags='pratt'), _('questions'))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 141, in filter
+		    return self.get_query_set().filter(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 556, in filter
+		    return self._filter_or_exclude(False, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 574, in _filter_or_exclude
+		    clone.query.add_q(Q(*args, **kwargs))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1152, in add_q
+		    can_reuse=used_aliases)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1092, in add_filter
+		    connector)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 67, in add
+		    value = obj.prepare(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 316, in prepare
+		    return self.field.get_prep_lookup(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 134, in get_prep_lookup
+		    return self._pk_trace(value, 'get_prep_lookup', lookup_type)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 196, in _pk_trace
+		    v = getattr(field, prep_func)(lookup_type, v, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 292, in get_prep_lookup
+		    return self.get_prep_value(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 479, in get_prep_value
+		    return int(value)
+		ValueError: invalid literal for int() with base 10: 'pratt'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-31 12:09:22,569 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/questions/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x8fac908>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x90d29d0>
+		REMOTE_PORT: 52390
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb3426260>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 105, in questions
+		    return question_list(request, Question.objects.filter(tags='pratt'), _('questions'))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 141, in filter
+		    return self.get_query_set().filter(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 556, in filter
+		    return self._filter_or_exclude(False, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 574, in _filter_or_exclude
+		    clone.query.add_q(Q(*args, **kwargs))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1152, in add_q
+		    can_reuse=used_aliases)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1092, in add_filter
+		    connector)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 67, in add
+		    value = obj.prepare(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 316, in prepare
+		    return self.field.get_prep_lookup(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 134, in get_prep_lookup
+		    return self._pk_trace(value, 'get_prep_lookup', lookup_type)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 196, in _pk_trace
+		    v = getattr(field, prep_func)(lookup_type, v, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 292, in get_prep_lookup
+		    return self.get_prep_value(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 479, in get_prep_value
+		    return int(value)
+		ValueError: invalid literal for int() with base 10: 'pratt'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-31 12:09:26,592 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x8f90638>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x901af70>
+		REMOTE_PORT: 52403
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb7d54188>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 105, in questions
+		    return question_list(request, Question.objects.filter(tags='pratt'), _('questions'))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 141, in filter
+		    return self.get_query_set().filter(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 556, in filter
+		    return self._filter_or_exclude(False, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 574, in _filter_or_exclude
+		    clone.query.add_q(Q(*args, **kwargs))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1152, in add_q
+		    can_reuse=used_aliases)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1092, in add_filter
+		    connector)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 67, in add
+		    value = obj.prepare(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 316, in prepare
+		    return self.field.get_prep_lookup(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 134, in get_prep_lookup
+		    return self._pk_trace(value, 'get_prep_lookup', lookup_type)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 196, in _pk_trace
+		    v = getattr(field, prep_func)(lookup_type, v, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 292, in get_prep_lookup
+		    return self.get_prep_value(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 479, in get_prep_value
+		    return int(value)
+		ValueError: invalid literal for int() with base 10: 'pratt'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-31 12:10:43,995 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0xb3508520>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0xb3508548>
+		REMOTE_PORT: 52781
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb7cb12a8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 105, in questions
+		    return question_list(request, Question.objects.filter(tags='pratt'), _('pratt'))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 141, in filter
+		    return self.get_query_set().filter(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 556, in filter
+		    return self._filter_or_exclude(False, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 574, in _filter_or_exclude
+		    clone.query.add_q(Q(*args, **kwargs))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1152, in add_q
+		    can_reuse=used_aliases)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1092, in add_filter
+		    connector)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 67, in add
+		    value = obj.prepare(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 316, in prepare
+		    return self.field.get_prep_lookup(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 134, in get_prep_lookup
+		    return self._pk_trace(value, 'get_prep_lookup', lookup_type)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 196, in _pk_trace
+		    v = getattr(field, prep_func)(lookup_type, v, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 292, in get_prep_lookup
+		    return self.get_prep_value(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 479, in get_prep_value
+		    return int(value)
+		ValueError: invalid literal for int() with base 10: 'pratt'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-31 12:10:46,238 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/questions/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x93efed0>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x9410d90>
+		REMOTE_PORT: 52796
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x94057b8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 105, in questions
+		    return question_list(request, Question.objects.filter(tags='pratt'), _('pratt'))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 141, in filter
+		    return self.get_query_set().filter(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 556, in filter
+		    return self._filter_or_exclude(False, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 574, in _filter_or_exclude
+		    clone.query.add_q(Q(*args, **kwargs))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1152, in add_q
+		    can_reuse=used_aliases)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1092, in add_filter
+		    connector)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 67, in add
+		    value = obj.prepare(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 316, in prepare
+		    return self.field.get_prep_lookup(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 134, in get_prep_lookup
+		    return self._pk_trace(value, 'get_prep_lookup', lookup_type)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 196, in _pk_trace
+		    v = getattr(field, prep_func)(lookup_type, v, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 292, in get_prep_lookup
+		    return self.get_prep_value(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 479, in get_prep_value
+		    return int(value)
+		ValueError: invalid literal for int() with base 10: 'pratt'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-05-31 12:10:47,279 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/questions/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x93eff70>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x93efe80>
+		REMOTE_PORT: 52804
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x91b39f8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 105, in questions
+		    return question_list(request, Question.objects.filter(tags='pratt'), _('pratt'))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 141, in filter
+		    return self.get_query_set().filter(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 556, in filter
+		    return self._filter_or_exclude(False, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 574, in _filter_or_exclude
+		    clone.query.add_q(Q(*args, **kwargs))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1152, in add_q
+		    can_reuse=used_aliases)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/query.py", line 1092, in add_filter
+		    connector)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 67, in add
+		    value = obj.prepare(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/where.py", line 316, in prepare
+		    return self.field.get_prep_lookup(lookup_type, value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 134, in get_prep_lookup
+		    return self._pk_trace(value, 'get_prep_lookup', lookup_type)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/related.py", line 196, in _pk_trace
+		    v = getattr(field, prep_func)(lookup_type, v, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 292, in get_prep_lookup
+		    return self.get_prep_value(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/fields/__init__.py", line 479, in get_prep_value
+		    return int(value)
+		ValueError: invalid literal for int() with base 10: 'pratt'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:24:05,275 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x965dfec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:24:14,460 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x965dfec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:24:29,887 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x965dfec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:26:33,703 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x965dfec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:26:34,821 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x965dfec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:29:38,973 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x965dfec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:29:42,266 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x965dfec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:29:44,182 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x965dfec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:38:17,760 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9a30fec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:38:21,574 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9a30fec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:38:22,858 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9a30fec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:38:23,735 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9a30fec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:38:28,642 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9a30fec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:38:33,737 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9a30fec>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:44:47,685 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9affc4c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:44:51,543 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9affc4c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:44:52,838 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9affc4c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:44:53,683 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9affc4c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:44:54,712 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9affc4c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-03 04:54:14,362 MSG: ui_registry.py:render:63 Exception Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x9affc4c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
+

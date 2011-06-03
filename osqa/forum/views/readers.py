@@ -122,11 +122,8 @@ def freshmen(request):
                          _("Freshmen Questions"))  
 ##
 ## My code ends
-## Create Tab for Filtering on Trinity
-
-## Create tab for filtering on Pratt
-
-@decorators.render('questions.html', 'questions', _('questions'), weight=0)
+## Change questions.html to all
+@decorators.render('questions.html', 'all', _('all'), weight=0)
 def questions(request):
     return question_list(request, Question.objects.all(), _('questions'))
 @decorators.render('questions.html')
@@ -250,7 +247,7 @@ def question_search(request, keywords):
                          paginator_context=paginator_context)
 
 
-@decorators.render('tags.html', 'tags', _('tags'), weight=100)
+@decorators.render('tags.html', 'tags', _('tags'), weight=100, tabbed=False)
 def tags(request):
     stag = ""
     tags = Tag.active.all()

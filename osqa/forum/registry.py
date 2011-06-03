@@ -16,8 +16,10 @@ for m in modules_template_tags:
 
 ui.register(ui.HEADER_LINKS,
             ui.Link(_('faq'), ui.Url('faq'), weight=400),
+            ui.Link(_('users'), ui.Url('users'), weight=250),#added new links for users, tags
+            ui.Link(_('tags'), ui.Url('tags'), weight=200),
             ui.Link(_('about'), ui.Url('about'), weight=300),
-
+		
             ui.Link(
                     text=lambda u, c: u.is_authenticated() and _('logout') or _('login'),
                     url=lambda u, c: u.is_authenticated() and reverse('logout') or reverse('auth_signin'),

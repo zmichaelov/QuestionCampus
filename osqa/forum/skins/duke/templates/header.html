@@ -12,10 +12,11 @@
 		<div id="top">
 		    {% loadregistry header_links %}{% endloadregistry %}
 		</div>
-
+<!--This section is where the tabs UI is handled ("nav")-->
     <div id="nav">
         {% loopregistry page_top_tabs %}{% spaceless %}
             <a id="nav_{{ tab_name }}"{% ifequal tab tab_name %} class="on"{% endifequal %} href="{{ tab_url }}" >{{ tab_title }}</a>
+            <!--This is where the tabs are generated-->
         {% endspaceless %}{% endloopregistry %}
         <a id="nav_ask" href="{% url ask %}" class="special">{% trans "ask a question" %}</a>
     </div>

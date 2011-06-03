@@ -125,8 +125,9 @@ class LoopContext(LoopBase):
 
     def update_context(self, context):
         context.update(self.loop_context(context))
-
-
+##
+## Possibly the class the creates the main page tabs
+##
 class PageTab(LoopBase):
     def __init__(self, tab_name, tab_title, url_getter, weight):
         super(PageTab, self).__init__(weight=weight)
