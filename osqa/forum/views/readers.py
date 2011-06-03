@@ -86,7 +86,10 @@ def index(request):
                          base_path=reverse('questions'),
                          feed_url=reverse('latest_questions_feed'),
                          paginator_context=paginator_context)
-
+# My Code Begins
+# Begin implementation of filter tabs
+# + Tabbed = False
+# renamed unanswered questions to Pratt
 @decorators.render('questions.html', 'unanswered', _('unanswered'), weight=400)
 def unanswered(request):
     return question_list(request,
@@ -94,11 +97,30 @@ def unanswered(request):
                          _('open questions without an accepted answer'),
                          None,
                          _("Unanswered Questions"))
+# Create a new html for Pratt tabs
+@decorators.render('questions.html', 'pratt', _('pratt'), weight=60)
+def pratt(request):
+    return question_list(request,
+                         Question.objects.filter(tags=Tag.active.filter(name='pratt')),
+                         _('Questions pertaining to Pratt'),
+                         None,
+                         _("Pratt Questions"))
+@decorators.render('questions.html', 'trinity', _('trinity'), weight=50)
+def trinity(request):
+    return question_list(request,
+                         Question.objects.filter(tags=Tag.active.filter(name='trinity')),
+                         _('Questions pertaining to Trinity'),
+                         None,
+                         _("Trinity Questions"))                         
+##
+## My code ends
+## Create Tab for Filtering on Trinity
+
+## Create tab for filtering on Pratt
 
 @decorators.render('questions.html', 'questions', _('questions'), weight=0)
 def questions(request):
     return question_list(request, Question.objects.all(), _('questions'))
-
 @decorators.render('questions.html')
 def tag(request, tag):
     try:
