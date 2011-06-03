@@ -43,7 +43,11 @@ core_urls = (
     url(r'^%s%s$' % (_('questions/'), _('ask/')), app.writers.ask, name='ask'),
     url(r'^%s%s$' % (_('questions/'), _('related_questions/')), app.commands.related_questions, name='related_questions'),
     
+    #Added new entry for pratt and trinity tab
+    url(r'^%s%s$' % (_('questions/'), _('trinity/')), app.readers.trinity, name='trinity'),
     url(r'^%s%s$' % (_('questions/'), _('unanswered/')), app.readers.unanswered, name='unanswered'),
+    url(r'^%s%s$' % (_('questions/'), _('pratt/')), app.readers.pratt, name='pratt'),
+    url(r'^%s%s$' % (_('questions/'), _('freshmen/')), app.readers.freshmen, name='freshmen'),
     url(r'^%s(?P<mode>[\w\-]+)/(?P<user>\d+)/(?P<slug>.*)/$' % _('questions/'), app.readers.user_questions, name='user_questions'),
     
     

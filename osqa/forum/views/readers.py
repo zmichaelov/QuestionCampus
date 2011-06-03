@@ -111,7 +111,15 @@ def trinity(request):
                          Question.objects.filter(tags=Tag.active.filter(name='trinity')),
                          _('Questions pertaining to Trinity'),
                          None,
-                         _("Trinity Questions"))                         
+                         _("Trinity Questions"))
+## Add a freshmen tab                    
+@decorators.render('questions.html', 'freshmen', _('freshmen'), weight=40)
+def freshmen(request):
+    return question_list(request,
+                         Question.objects.filter(tags=Tag.active.filter(name='freshmen')),
+                         _('Questions specifically for incoming freshmen'),
+                         None,
+                         _("Freshmen Questions"))  
 ##
 ## My code ends
 ## Create Tab for Filtering on Trinity

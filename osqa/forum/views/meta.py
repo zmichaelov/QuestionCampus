@@ -86,7 +86,7 @@ def logout(request):
     'next' : get_next_url(request),
     }, context_instance=RequestContext(request))
 
-@decorators.render('badges.html', 'badges', _('badges'), weight=300)
+@decorators.render('badges.html', 'badges', _('badges'), weight=300, tabbed=False)
 def badges(request):
     badges = [b.ondb for b in sorted(BadgesMeta.by_id.values(), lambda b1, b2: cmp(b1.name, b2.name))]
 
