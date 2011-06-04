@@ -37,7 +37,7 @@
     {% endif %}
     <div style="width:600px;float:left;margin-bottom:5px;">
     {% blocktrans %}
-    	Simply register with a valid duke.edu email address and you can start asking away.
+    	Simply register with your Duke email address and you can start asking away.
         <!--External login services use <b><a href="http://openid.net/">OpenID</a></b> technology, where your password always stays confidential between
         you and your login provider and you don't have to remember another one.-->
     {% endblocktrans %}
@@ -160,26 +160,19 @@
 {% endblock %}
 
 {% block sidebar %}
-<!--<div class="boxC"> TODO: Figure out what to put in this side bar
-   <h3 class="subtitle">{% trans "Why use OpenID?" %}</h3>
+<div class="boxC">
+   <h3 class="subtitle">{% trans "Registration Tips" %}</h3>
     <ul class="list-item">
         <li>
-		{% trans "with openid it is easier" %}
+		{% trans "register with your Duke email address" %}
         </li>
         <li>
-		{% trans "reuse openid" %}
+		{% trans "choose a unique username, preferably your NetID" %}
         </li>
-        <li>
-		{% trans "openid is widely adopted" %}
-        </li>
-        <li>
-		{% trans "openid is supported open standard" %}
-        </li>
-
     </ul>
-    <p class="info-box-follow-up-links">
+   <!-- <p class="info-box-follow-up-links">
         <a href="http://openid.net/what/" target="_blank">{% trans "Find out more" %} </a><br/>
         <a href="http://openid.net/get/" target="_blank">{% trans "Get OpenID" %} </a>
-    </p>
-</div>-->
+    </p>-->
+</div>
 {% endblock%}
