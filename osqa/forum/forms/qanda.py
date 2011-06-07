@@ -84,7 +84,7 @@ class TagNamesField(forms.CharField):
         list = {}
         for tag in split_re.split(data):
             list[tag] = tag
-
+		
         if len(list) > settings.FORM_MAX_NUMBER_OF_TAGS or len(list) < settings.FORM_MIN_NUMBER_OF_TAGS:
             raise forms.ValidationError(_('please use between %(min)s and %(max)s tags') % { 'min': settings.FORM_MIN_NUMBER_OF_TAGS, 'max': settings.FORM_MAX_NUMBER_OF_TAGS})
 
@@ -147,17 +147,17 @@ class FeedbackForm(forms.Form):
             self.fields['name'] = forms.CharField(label=_('Your name:'), required=False)
             self.fields['email'] = forms.EmailField(label=_('Email (not shared with anyone):'), required=True)
 
-
-
+#MY_CHOICES = ( ('pratt', 'pratt'), ('trinity', 'trinity'),('freshmen', 'freshmen'), )
 class AskForm(forms.Form):
     title  = TitleField()
     text   = QuestionEditorField()
-
+    #category = forms.ChoiceField(choices=MY_CHOICES)
+	#category = forms.ChoiceField(widget=forms.CheckboxSelectMultiple, choices=MY_CHOICES)
     def __init__(self, data=None, user=None, *args, **kwargs):
         super(AskForm, self).__init__(data, *args, **kwargs)
 
         self.fields['tags']   = TagNamesField(user)
-        
+        #category = forms.ChoiceField(choices=MY_CHOICES)
         if int(user.reputation) < settings.CAPTCHA_IF_REP_LESS_THAN and not (user.is_superuser or user.is_staff):
             spam_fields = call_all_handlers('create_anti_spam_field')
             if spam_fields:

@@ -3,7 +3,7 @@
 body {
     /*overflow-y: scroll;
     height: 100%; */
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: repeat scroll 0 0 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#9396A3), to(#9396A3), color-stop(.5,#FFFFFF));
     color: #000000;
     font-family: sans-serif;
     font-size: 12px;
@@ -193,7 +193,7 @@ blockquote {
 
 #top {
     float: right;
-    background-color: #FFFFFF;
+    background-color: transparent;
     padding: 3px;
     text-align: right;
     width: 500px;
@@ -210,12 +210,13 @@ blockquote {
 
 #logo {
     float: left;
-    padding: 5px 0 0;
+    clear: none;
+    padding: 0px 0 0;
 }
 
 #nav {
     float: right;
-    margin: 35px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
     width: 750px;
 }
 

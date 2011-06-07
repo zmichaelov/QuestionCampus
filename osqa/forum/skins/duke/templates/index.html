@@ -18,11 +18,11 @@
         {% endif %}
     {% endif %}
     {% include "question_list/count.html" %}
-    {% sidebar_upper %}
+<!--{% sidebar_upper %} Remove blank sidebars-->
     {% if request.user.is_authenticated %}
         {% tag_selector %}
     {% endif %}
-    {% sidebar_lower %}
+<!--    {% sidebar_lower %} Remove blank sidebars-->
     {% recent_tags %}
     {% recent_awards %}
 {% endblock %}

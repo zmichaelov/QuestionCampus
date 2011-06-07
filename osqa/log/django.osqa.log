@@ -2285,3 +2285,1760 @@ Traceback (most recent call last):
     "arguments '%s' not found." % (lookup_view_s, args, kwargs))
 NoReverseMatch: Reverse for 'pratt' with arguments '()' and keyword arguments '{}' not found.
 
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-06-04 01:27:54,733 MSG: __init__.py:get_modules_script:27 Error importing startup from module <module 'osqa.forum_modules.customqanda' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/__init__.py'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 7
+    mychoices = ( ('PR', 'pratt'), ('TR', 'trinity'),('FR', 'freshmen'), )
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-06-04 01:33:17,447 MSG: __init__.py:get_modules_script:27 Error importing startup from module <module 'osqa.forum_modules.customqanda' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 7
+    mychoices = ( ('PR', 'pratt'), ('TR', 'trinity'),('FR', 'freshmen'), )
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 01:36:17,976 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.9.10.1307163169; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307157885.1307163169.7; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x98844f8>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x9884520>
+		REMOTE_PORT: 49749
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb7d312a8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		__utma: 142787488.1705372774.1307121043.1307157885.1307163169.7
+		__utmb: 142787488.9.10.1307163169
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 108, in ask
+		    form = AskForm(user=request.user)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 77, in decoratable_method
+		    return decoratable(self, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 8, in replacement_init
+		    super(AskForm, self).__init__(data, *args, **kwargs)
+		NameError: global name 'AskForm' is not defined
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 01:36:23,064 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.11.10.1307163169; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307157885.1307163169.7; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0xa17c0e8>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0xa17c1d8>
+		REMOTE_PORT: 49769
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xa1c5d10>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		__utma: 142787488.1705372774.1307121043.1307157885.1307163169.7
+		__utmb: 142787488.11.10.1307163169
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 108, in ask
+		    form = AskForm(user=request.user)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 77, in decoratable_method
+		    return decoratable(self, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 8, in replacement_init
+		    super(AskForm, self).__init__(data, *args, **kwargs)
+		NameError: global name 'AskForm' is not defined
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 01:38:16,114 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.12.10.1307163169; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307157885.1307163169.7; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x85904f8>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x8590520>
+		REMOTE_PORT: 49949
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb7c4c2a8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		__utma: 142787488.1705372774.1307121043.1307157885.1307163169.7
+		__utmb: 142787488.12.10.1307163169
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 108, in ask
+		    form = AskForm(user=request.user)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 77, in decoratable_method
+		    return decoratable(self, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 8, in replacement_init
+		    super(osqa_forms.AskForm, self).__init__(data, *args, **kwargs)
+		NameError: global name 'data' is not defined
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 01:40:04,256 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.13.10.1307163169; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307157885.1307163169.7; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x8e88020>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x8e88430>
+		REMOTE_PORT: 50192
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x8fe2da0>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		__utma: 142787488.1705372774.1307121043.1307157885.1307163169.7
+		__utmb: 142787488.13.10.1307163169
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 108, in ask
+		    form = AskForm(user=request.user)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 77, in decoratable_method
+		    return decoratable(self, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 8, in replacement_init
+		    super(osqa_forms.AskForm, self).__init__(self.data, *args, **kwargs)
+		NameError: global name 'data' is not defined
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 01:40:40,841 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.14.10.1307163169; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307157885.1307163169.7; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x94064f8>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x9406520>
+		REMOTE_PORT: 51022
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb7cf02a8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		__utma: 142787488.1705372774.1307121043.1307157885.1307163169.7
+		__utmb: 142787488.14.10.1307163169
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 108, in ask
+		    form = AskForm(user=request.user)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 77, in decoratable_method
+		    return decoratable(self, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 8, in replacement_init
+		    super(osqa_forms.AskForm, self).__init__(self.data, *args, **kwargs)
+		AttributeError: 'AskForm' object has no attribute 'data'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 01:42:24,360 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.15.10.1307163169; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307157885.1307163169.7; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x90bde80>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x9134ea8>
+		REMOTE_PORT: 51254
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x90c0ba8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		__utma: 142787488.1705372774.1307121043.1307157885.1307163169.7
+		__utmb: 142787488.15.10.1307163169
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 108, in ask
+		    form = AskForm(user=request.user)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 77, in decoratable_method
+		    return decoratable(self, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 8, in replacement_init
+		    super(osqa_forms.AskForm, self).__init__(self.data, *args, **kwargs)
+		AttributeError: 'AskForm' object has no attribute 'data'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 01:44:47,119 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.16.10.1307163169; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307157885.1307163169.7; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x91d88b8>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x91fdbd8>
+		REMOTE_PORT: 51517
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x951fc80>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		__utma: 142787488.1705372774.1307121043.1307157885.1307163169.7
+		__utmb: 142787488.16.10.1307163169
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 108, in ask
+		    form = AskForm(user=request.user)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 77, in decoratable_method
+		    return decoratable(self, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 10, in replacement_init
+		    self.fields['tags'] = forms.ChoiceField(widget=forms.RadioSelect, choices=mychoices)
+		NameError: global name 'forms' is not defined
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 01:47:19,851 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.17.10.1307163169; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307157885.1307163169.7; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x85684f8>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x8568520>
+		REMOTE_PORT: 44226
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb7c4b2a8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		__utma: 142787488.1705372774.1307121043.1307157885.1307163169.7
+		__utmb: 142787488.17.10.1307163169
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 108, in ask
+		    form = AskForm(user=request.user)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 77, in decoratable_method
+		    return decoratable(self, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 10, in replacement_init
+		    self.fields['tags'] = forms.ChoiceField(widget=forms.RadioSelect, choices=mychoices)
+		NameError: global name 'forms' is not defined
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 01:51:15,497 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: Admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.18.10.1307163169; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307157885.1307163169.7; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=34afe94c367200d94e7bbd2946e58cab
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x865a4f8>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x865a520>
+		REMOTE_PORT: 50604
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb7ccf2a8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 34afe94c367200d94e7bbd2946e58cab
+		__utma: 142787488.1705372774.1307121043.1307157885.1307163169.7
+		__utmb: 142787488.18.10.1307163169
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 108, in ask
+		    form = AskForm(user=request.user)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 77, in decoratable_method
+		    return decoratable(self, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 11, in replacement_init
+		    if int(user.reputation) < settings.CAPTCHA_IF_REP_LESS_THAN and not (user.is_superuser or user.is_staff):
+		NameError: global name 'settings' is not defined
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-06-04 02:17:20,792 MSG: __init__.py:get_modules_script:27 Error importing startup from module <module 'osqa.forum_modules.customqanda' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 20
+    mychoices = ( ('pratt', 'pratt'), ('trinity', 'trinity'),('freshmen', 'freshmen'), )
+   ^
+IndentationError: unexpected indent
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-06-04 02:31:15,412 MSG: __init__.py:get_modules_script:27 Error importing startup from module <module 'osqa.forum_modules.customqanda' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 21
+    self.fields['tags'] = forms.ChoiceField(widget=forms.RadioSelect, choices=mychoices)
+                                                                                       ^
+IndentationError: unindent does not match any outer indentation level
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py TIME: 2011-06-04 16:18:29,775 MSG: __init__.py:get_modules_script:27 Error importing startup from module <module 'osqa.forum_modules.customqanda' from '/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/__init__.pyc'>: 
+ Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/__init__.py", line 18, in get_modules_script
+    all.append(__import__('%s.%s' % (m.__name__, script_name), globals(), locals(), [m.__name__]))
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/customqanda/startup.py", line 21
+    self.fields['tags'] = forms.ChoiceField(widget=forms.CheckboxSelectMultiple, choices=mychoices)
+                                                                                                  ^
+IndentationError: unindent does not match any outer indentation level
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 16:45:28,152 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.49.10.1307216799; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307210406.1307216799.10; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=0804b84955adec2443f2fb48259184ff
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x853d4f8>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x853d520>
+		REMOTE_PORT: 60558
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xb7c952a8>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 0804b84955adec2443f2fb48259184ff
+		__utma: 142787488.1705372774.1307121043.1307210406.1307216799.10
+		__utmb: 142787488.49.10.1307216799
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 113, in ask
+		    }, context_instance=RequestContext(request))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/shortcuts/__init__.py", line 20, in render_to_response
+		    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader.py", line 186, in render_to_string
+		    return t.render(context_instance)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 173, in render
+		    return self._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 125, in render
+		    return compiled_parent._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 125, in render
+		    return compiled_parent._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 62, in render
+		    result = block.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 62, in render
+		    result = block.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 849, in render
+		    return _render_value_in_context(output, context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 829, in _render_value_in_context
+		    value = force_unicode(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/utils/encoding.py", line 66, in force_unicode
+		    s = unicode(s)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 408, in __unicode__
+		    return self.as_widget()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 429, in as_widget
+		    if auto_id and 'id' not in attrs and 'id' not in widget.attrs:
+		AttributeError: 'list' object has no attribute 'attrs'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 16:51:17,516 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.51.10.1307216799; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307210406.1307216799.10; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=0804b84955adec2443f2fb48259184ff
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x9fb7f20>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x9fb7638>
+		REMOTE_PORT: 54600
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x9fbf140>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 0804b84955adec2443f2fb48259184ff
+		__utma: 142787488.1705372774.1307121043.1307210406.1307216799.10
+		__utmb: 142787488.51.10.1307216799
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 113, in ask
+		    }, context_instance=RequestContext(request))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/shortcuts/__init__.py", line 20, in render_to_response
+		    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader.py", line 186, in render_to_string
+		    return t.render(context_instance)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 173, in render
+		    return self._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 125, in render
+		    return compiled_parent._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 125, in render
+		    return compiled_parent._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 62, in render
+		    result = block.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 62, in render
+		    result = block.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 849, in render
+		    return _render_value_in_context(output, context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 829, in _render_value_in_context
+		    value = force_unicode(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/utils/encoding.py", line 66, in force_unicode
+		    s = unicode(s)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 408, in __unicode__
+		    return self.as_widget()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 429, in as_widget
+		    if auto_id and 'id' not in attrs and 'id' not in widget.attrs:
+		AttributeError: 'tuple' object has no attribute 'attrs'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-04 16:55:30,979 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.52.10.1307216799; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307210406.1307216799.10; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=0804b84955adec2443f2fb48259184ff
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x9fb7228>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0xa0bd250>
+		REMOTE_PORT: 55095
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x9fbfa40>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 0804b84955adec2443f2fb48259184ff
+		__utma: 142787488.1705372774.1307121043.1307210406.1307216799.10
+		__utmb: 142787488.52.10.1307216799
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 113, in ask
+		    }, context_instance=RequestContext(request))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/shortcuts/__init__.py", line 20, in render_to_response
+		    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader.py", line 186, in render_to_string
+		    return t.render(context_instance)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 173, in render
+		    return self._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 125, in render
+		    return compiled_parent._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 125, in render
+		    return compiled_parent._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 62, in render
+		    result = block.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 62, in render
+		    result = block.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 849, in render
+		    return _render_value_in_context(output, context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 829, in _render_value_in_context
+		    value = force_unicode(value)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/utils/encoding.py", line 66, in force_unicode
+		    s = unicode(s)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 408, in __unicode__
+		    return self.as_widget()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 429, in as_widget
+		    if auto_id and 'id' not in attrs and 'id' not in widget.attrs:
+		AttributeError: 'tuple' object has no attribute 'attrs'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-06 14:47:42,257 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /admin/settings/basic/
+        USER: admin (1)
+        METHOD: POST
+        POST PARAMETERS:
+        		CONTACT_URL: mailto: admin@dukexchange.com
+		submit: Save
+		APP_KEYWORDS: Duke,Xchange,forum,community,question, answer, q&a
+		APP_DESCRIPTION: Ask and answer questions.
+		APP_SHORT_NAME: DukeXchange
+		APP_LOGO_old: /upfiles/DukeXchangelogo3.png
+		APP_FAVICON_old: /upfiles/vertical_dod.jpg
+		SUPPORT_URL: mailto: support@dukexchange.com
+		APP_COPYRIGHT: Copyright DukeXChange, 2011. Some rights reserved under creative commons license.
+		APP_TITLE: DukeXchange: Q&A For Duke
+		APP_FAVICON: 
+
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/admin/settings/basic/
+		HTTP_ACCEPT_LANGUAGE: en-US,en;q=0.8
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: POST
+		PATH_INFO: /admin/settings/basic/
+		HTTP_ORIGIN: http://dukexchange.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		CONTENT_LENGTH: 11952
+		HTTP_ACCEPT_CHARSET: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_6_7) AppleWebKit/534.24 (KHTML, like Gecko) Iron/11.0.700.2 Chrome/11.0.700.2 Safari/534.24
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmz=142787488.1307137854.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); sessionid=9a557e172c9a7d5c5f603a9916726d10; __utma=142787488.1577359542.1307137854.1307377278.1307386012.10; __utmc=142787488; __utmb=142787488.6.10.1307386012
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/admin/settings/basic/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x92fe110>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /admin/settings/basic/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.8
+		wsgi.errors: <mod_wsgi.Log object at 0x92fe2a0>
+		REMOTE_PORT: 43710
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		CONTENT_TYPE: multipart/form-data; boundary=----WebKitFormBoundaryZPFsaVIj4DNNKShL
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x9e31890>
+		HTTP_ACCEPT_ENCODING: gzip,deflate,sdch
+
+        COOKIES:
+        		__utma: 142787488.1577359542.1307137854.1307377278.1307386012.10
+		__utmb: 142787488.6.10.1307386012
+		__utmc: 142787488
+		sessionid: 9a557e172c9a7d5c5f603a9916726d10
+		__utmz: 142787488.1307137854.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/admin.py", line 28, in wrapper
+		    return fn(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/admin.py", line 37, in wrapper
+		    res = fn(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/admin.py", line 146, in settings_set
+		    if form.is_valid():
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 121, in is_valid
+		    return self.is_bound and not bool(self.errors)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 112, in _get_errors
+		    self.full_clean()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 267, in full_clean
+		    self._clean_fields()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 278, in _clean_fields
+		    value = field.widget.value_from_datadict(self.data, self.files, self.add_prefix(name))
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/settings/forms.py", line 76, in value_from_datadict
+		    raise Exception('File type not allowed')
+		Exception: File type not allowed
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-07 15:04:40,135 MSG: ui_registry.py:render:63 Exception Reverse for 'social' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x891910c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'social' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-07 15:05:40,595 MSG: ui_registry.py:render:63 Exception Reverse for 'social' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x976810c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'social' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-07 15:06:32,892 MSG: ui_registry.py:render:63 Exception Reverse for 'social' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0xa47510c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'social' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-07 15:08:03,470 MSG: ui_registry.py:render:63 Exception Reverse for 'social' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x8a0514c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'social' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-07 15:08:07,798 MSG: ui_registry.py:render:63 Exception Reverse for 'social' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x8a0514c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'social' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py TIME: 2011-06-07 15:08:20,352 MSG: ui_registry.py:render:63 Exception Reverse for 'social' with arguments '()' and keyword arguments '{}' not found. updating ui loop context <forum.modules.ui_objects.PageTab object at 0x8a0514c>: 
+Traceback (most recent call last):
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/templatetags/ui_registry.py", line 58, in render
+    ui_object.update_context(context)
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/ui_objects.py", line 142, in update_context
+    tab_url=self.url_getter()
+  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/decorators.py", line 36, in <lambda>
+    ui.PageTab(tab, tab_title, lambda: reverse(func.__name__), weight=weight))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 351, in reverse
+    *args, **kwargs)))
+  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/urlresolvers.py", line 297, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'social' with arguments '()' and keyword arguments '{}' not found.
+
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-07 15:20:44,630 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.42.10.1307472628; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307468916.1307472628.42; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=87d9a5c911c10b10e8eda2f9ad557be5
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x8e4e4a8>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		HTTP_CACHE_CONTROL: max-age=0
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.7
+		wsgi.errors: <mod_wsgi.Log object at 0x91d7d68>
+		REMOTE_PORT: 34056
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x92924a0>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 87d9a5c911c10b10e8eda2f9ad557be5
+		__utma: 142787488.1705372774.1307121043.1307468916.1307472628.42
+		__utmb: 142787488.42.10.1307472628
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 113, in ask
+		    }, context_instance=RequestContext(request))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/shortcuts/__init__.py", line 20, in render_to_response
+		    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader.py", line 186, in render_to_string
+		    return t.render(context_instance)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 173, in render
+		    return self._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 125, in render
+		    return compiled_parent._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 125, in render
+		    return compiled_parent._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 62, in render
+		    result = block.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 62, in render
+		    result = block.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 139, in render
+		    return self.template.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 173, in render
+		    return self._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 961, in render
+		    t = get_template(file_name)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader.py", line 160, in get_template
+		    template = get_template_from_string(template, origin, template_name)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader.py", line 168, in get_template_from_string
+		    return Template(source, origin, name)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 158, in __init__
+		    self.nodelist = compile_string(template_string, origin)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 186, in compile_string
+		    return parser.parse()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 282, in parse
+		    compiled_result = compile_func(self, token)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/templatetags/i18n.py", line 200, in do_translate
+		    value, noop = TranslateParser(token.contents).top()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/templatetags/i18n.py", line 196, in top
+		    raise TemplateSyntaxError("only option for 'trans' is 'noop'")
+		TemplateSyntaxError: only option for 'trans' is 'noop'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-06-07 15:20:51,438 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /questions/ask/
+        USER: admin (1)
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: dukexchange.com
+		HTTP_REFERER: http://dukexchange.com/questions/ask/
+		HTTP_X_FORWARDED_HOST: dukexchange.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /questions/ask/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_7; en-us) AppleWebKit/533.21.1 (KHTML, like Gecko) Version/5.0.5 Safari/533.21.1
+		HTTP_CONNECTION: close
+		HTTP_COOKIE: __utmb=142787488.43.10.1307472628; __utmc=142787488; __utma=142787488.1705372774.1307121043.1307468916.1307472628.42; __utmz=142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); BX=0nup6a16u0106&b=3&s=ac; sessionid=87d9a5c911c10b10e8eda2f9ad557be5
+		SERVER_NAME: dukexchange.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/questions/ask/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x925a1d8>
+		HTTP_HOST: dukexchange.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /questions/ask/
+		HTTP_ACCEPT: application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 152.3.68.7
+		wsgi.errors: <mod_wsgi.Log object at 0x883afc0>
+		REMOTE_PORT: 34070
+		HTTP_ACCEPT_LANGUAGE: en-us
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x928ce78>
+		HTTP_ACCEPT_ENCODING: gzip, deflate
+
+        COOKIES:
+        		__utmz: 142787488.1307121043.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)
+		sessionid: 87d9a5c911c10b10e8eda2f9ad557be5
+		__utma: 142787488.1705372774.1307121043.1307468916.1307472628.42
+		__utmb: 142787488.43.10.1307472628
+		__utmc: 142787488
+		BX: 0nup6a16u0106&b=3&s=ac
+
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 30, in <lambda>
+		    self._callable = lambda *args, **kwargs: fn(origin, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/akismet/startup.py", line 70, in wrapper
+		    return origin(request, *args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/writers.py", line 113, in ask
+		    }, context_instance=RequestContext(request))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/shortcuts/__init__.py", line 20, in render_to_response
+		    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader.py", line 186, in render_to_string
+		    return t.render(context_instance)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 173, in render
+		    return self._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 125, in render
+		    return compiled_parent._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 125, in render
+		    return compiled_parent._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 62, in render
+		    result = block.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 62, in render
+		    result = block.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader_tags.py", line 139, in render
+		    return self.template.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 173, in render
+		    return self._render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 167, in _render
+		    return self.nodelist.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 796, in render
+		    bits.append(self.render_node(node, context))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 809, in render_node
+		    return node.render(context)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 961, in render
+		    t = get_template(file_name)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader.py", line 160, in get_template
+		    template = get_template_from_string(template, origin, template_name)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/loader.py", line 168, in get_template_from_string
+		    return Template(source, origin, name)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 158, in __init__
+		    self.nodelist = compile_string(template_string, origin)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 186, in compile_string
+		    return parser.parse()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/template/__init__.py", line 282, in parse
+		    compiled_result = compile_func(self, token)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/templatetags/i18n.py", line 200, in do_translate
+		    value, noop = TranslateParser(token.contents).top()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/templatetags/i18n.py", line 196, in top
+		    raise TemplateSyntaxError("only option for 'trans' is 'noop'")
+		TemplateSyntaxError: only option for 'trans' is 'noop'
+		
+
+        
