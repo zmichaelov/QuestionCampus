@@ -1,0 +1,8 @@
+*.pyc
+*.log
+apache2/
+bin/
+lib/
+osqa/cache/
+osqa/build/
+osqa/forum/upfiles/
