@@ -3,14 +3,15 @@
 
 	<div id="roof">
 	  
+
+	  
+		<div id="top">
+		    {% loadregistry header_links %}{% endloadregistry %}
+		</div>
 		<div id="logo">
 			<a href="{% url index %}">
 				<img src="{{ settings.APP_LOGO }}" title="{% trans "back to home page" %}" alt="{{settings.APP_TITLE}} logo"/>
 			</a>
-		</div>
-	  
-		<div id="top">
-		    {% loadregistry header_links %}{% endloadregistry %}
 		</div>
 <!--This section is where the tabs UI is handled ("nav")-->
     <div id="nav">

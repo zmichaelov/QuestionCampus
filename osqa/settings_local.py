@@ -38,7 +38,7 @@ SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 # This should be equal to your domain name, plus the web application context.
 # This shouldn't be followed by a trailing slash.
 # I.e., http://www.yoursite.com or http://www.hostedsite.com/yourhostapp
-APP_URL = 'http://dukexchange.com'
+APP_URL = 'http://questioncampus.com'
 
 #LOCALIZATIONS
 TIME_ZONE = 'America/New_York'
@@ -51,10 +51,10 @@ LANGUAGE_CODE = 'en'
 DJANGO_VERSION = 1.1
 OSQA_DEFAULT_SKIN = 'duke'
 
-DISABLED_MODULES = ['books', 'recaptcha', 'project_badges','openidauth','facebookauth','oauthauth']
+DISABLED_MODULES = ['books', 'recaptcha','project_badges','openidauth','facebookauth','oauthauth']
 #Email Configuration Settings
 EMAIL_HOST = 'smtp.webfaction.com'
 EMAIL_HOST_USER = 'duke_exchange'
 EMAIL_HOST_PASSWORD = 'You c@nt tak3 the $ky from me'
-DEFAULT_FROM_EMAIL = 'support@dukexchange.com'
-SERVER_EMAIL = 'support@dukexchange.com'
+DEFAULT_FROM_EMAIL = 'admin@questioncampus.com'
+SERVER_EMAIL = 'admin@questioncampus.com'

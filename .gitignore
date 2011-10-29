@@ -1,8 +1,7 @@
 *.pyc
-*.log
-apache2/
+*.pyo
+*.xml
 bin/
 lib/
-osqa/cache/
-osqa/build/
 osqa/forum/upfiles/
+.DS_Store

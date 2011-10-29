@@ -97,10 +97,10 @@ def unanswered(request):
                          _('open questions without an accepted answer'),
                          None,
                          _("Unanswered Questions"))
-@decorators.render('questions.html', 'social life', _('social life'), weight=80)
-def social_life(request):
+@decorators.render('questions.html', 'social', _('social'), weight=80)
+def social(request):
     return question_list(request,
-                         Question.objects.filter(tags=Tag.active.filter(name='social_life')),
+                         Question.objects.filter(tags=Tag.active.filter(name='social')),
                          _('Questions about social life'),
                          None,
                          _("Social Life Questions"))

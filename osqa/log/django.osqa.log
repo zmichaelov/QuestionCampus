@@ -4042,3 +4042,267 @@ NoReverseMatch: Reverse for 'social' with arguments '()' and keyword arguments '
 		
 
         
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-08-06 09:17:53,907 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /account/local/signin/
+        USER: <anonymous>
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: questioncampus.com
+		HTTP_REFERER: http://questioncampus.com/tags/macbook/?sort=newest
+		HTTP_X_FORWARDED_HOST: questioncampus.com
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /account/local/signin/
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/4.0 (compatible; MSIE 6.0; Windows NT) ::ELNSB50::000061100320025802a00111000000000507000900000000
+		HTTP_CONNECTION: close
+		SERVER_NAME: questioncampus.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		HTTP_VIA: 1.1 www.automovileschile.cl
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/account/local/signin/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x965d5e8>
+		HTTP_HOST: questioncampus.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /account/local/signin/
+		HTTP_ACCEPT: text/xml,application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5
+		mod_wsgi.listener_host: 
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 190.54.16.216
+		wsgi.errors: <mod_wsgi.Log object at 0x965d890>
+		REMOTE_PORT: 45566
+		HTTP_ACCEPT_LANGUAGE: en-us;en,en-gb
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		CONTENT_TYPE: text/html
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x9efde30>
+
+        COOKIES:
+        None
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/auth.py", line 96, in prepare_provider_signin
+		    return process_provider_signin(request, provider)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/auth.py", line 110, in process_provider_signin
+		    assoc_key = provider_class.process_authentication_request(request)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/authentication.py", line 8, in process_authentication_request
+		    if form_auth.is_valid():
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 121, in is_valid
+		    return self.is_bound and not bool(self.errors)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 112, in _get_errors
+		    self.full_clean()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 267, in full_clean
+		    self._clean_fields()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/forms/forms.py", line 287, in _clean_fields
+		    value = getattr(self, 'clean_%s' % name)()
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/forms.py", line 57, in clean_username
+		    return self._clean_nonempty_field('username')
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum_modules/localauth/forms.py", line 50, in _clean_nonempty_field
+		    value = self.cleaned_data[field].strip()
+		AttributeError: 'NoneType' object has no attribute 'strip'
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-10-29 18:16:39,117 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /tags/pro/
+        USER: <anonymous>
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: questioncampus.com
+		mod_wsgi.listener_host: 
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /tags/pro/
+		HTTP_FROM: googlebot(at)googlebot.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+		HTTP_CONNECTION: close
+		SERVER_NAME: questioncampus.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/tags/pro/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x964ec50>
+		HTTP_HOST: questioncampus.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /tags/pro/
+		HTTP_ACCEPT: */*
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 66.249.71.102
+		wsgi.errors: <mod_wsgi.Log object at 0x964e7c8>
+		REMOTE_PORT: 56710
+		HTTP_X_FORWARDED_HOST: questioncampus.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0x9c93800>
+		HTTP_ACCEPT_ENCODING: gzip,deflate
+
+        COOKIES:
+        None
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 147, in tag
+		    tag = Tag.active.get(name=unquote(tag))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 132, in get
+		    return self.get_query_set().get(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 342, in get
+		    num = len(clone)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 80, in __len__
+		    self._result_cache = list(self.iterator())
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 271, in iterator
+		    for row in compiler.results_iter():
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/compiler.py", line 677, in results_iter
+		    for rows in self.execute_sql(MULTI):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/compiler.py", line 731, in execute_sql
+		    cursor = self.connection.cursor()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/backends/__init__.py", line 75, in cursor
+		    cursor = self._cursor()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/backends/postgresql_psycopg2/base.py", line 136, in _cursor
+		    self.connection = Database.connect(**conn_params)
+		OperationalError: FATAL:  password authentication failed for user "zmichaelov_duke_exchange"
+		
+		
+
+        
+/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/meta.py TIME: 2011-10-29 18:22:25,963 MSG: meta.py:error_handler:200 
+        error executing request:
+        PATH: /tags/pratt/
+        USER: <anonymous>
+        METHOD: GET
+        POST PARAMETERS:
+        None
+        GET PARAMETERS:
+        None
+        HTTP HEADERS:
+        		mod_wsgi.listener_port: 41736
+		HTTP_X_FORWARDED_SERVER: questioncampus.com
+		mod_wsgi.listener_host: 
+		SERVER_SOFTWARE: Apache/2.2.15 (Unix) mod_wsgi/3.2 Python/2.6.5
+		SCRIPT_NAME: 
+		mod_wsgi.handler_script: 
+		SERVER_SIGNATURE: 
+		REQUEST_METHOD: GET
+		PATH_INFO: /tags/pratt/
+		HTTP_FROM: googlebot(at)googlebot.com
+		SERVER_PROTOCOL: HTTP/1.0
+		QUERY_STRING: 
+		HTTP_USER_AGENT: Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+		HTTP_CONNECTION: close
+		SERVER_NAME: questioncampus.com
+		REMOTE_ADDR: 127.0.0.1
+		mod_wsgi.request_handler: wsgi-script
+		wsgi.url_scheme: http
+		PATH_TRANSLATED: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi/tags/pratt/
+		SERVER_PORT: 80
+		wsgi.multiprocess: False
+		mod_wsgi.input_chunked: 0
+		SERVER_ADDR: 127.0.0.1
+		DOCUMENT_ROOT: /usr/local/apache2/htdocs
+		mod_wsgi.process_group: 
+		SCRIPT_FILENAME: /home/zmichaelov/webapps/duke_exchange/osqa.wsgi
+		SERVER_ADMIN: [no address given]
+		wsgi.input: <mod_wsgi.Input object at 0x964e8e0>
+		HTTP_HOST: questioncampus.com
+		wsgi.multithread: True
+		mod_wsgi.callable_object: application
+		REQUEST_URI: /tags/pratt/
+		HTTP_ACCEPT: */*
+		wsgi.version: (1, 1)
+		GATEWAY_INTERFACE: CGI/1.1
+		HTTP_X_FORWARDED_FOR: 66.249.71.102
+		wsgi.errors: <mod_wsgi.Log object at 0x964ed40>
+		REMOTE_PORT: 36272
+		HTTP_X_FORWARDED_HOST: questioncampus.com
+		mod_wsgi.version: (3, 2)
+		wsgi.run_once: False
+		mod_wsgi.application_group: web199.webfaction.com|
+		mod_wsgi.script_reloading: 1
+		wsgi.file_wrapper: <built-in method file_wrapper of mod_wsgi.Adapter object at 0xa152380>
+		HTTP_ACCEPT_ENCODING: gzip,deflate
+
+        COOKIES:
+        None
+        EXCEPTION INFO:
+        		Traceback (most recent call last):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/core/handlers/base.py", line 100, in get_response
+		    response = callback(request, *callback_args, **callback_kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 95, in decorated
+		    return decoratable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/modules/decorators.py", line 55, in __call__
+		    res = self._callable(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/osqa/forum/views/readers.py", line 147, in tag
+		    tag = Tag.active.get(name=unquote(tag))
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/manager.py", line 132, in get
+		    return self.get_query_set().get(*args, **kwargs)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 342, in get
+		    num = len(clone)
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 80, in __len__
+		    self._result_cache = list(self.iterator())
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/query.py", line 271, in iterator
+		    for row in compiler.results_iter():
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/compiler.py", line 677, in results_iter
+		    for rows in self.execute_sql(MULTI):
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/models/sql/compiler.py", line 731, in execute_sql
+		    cursor = self.connection.cursor()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/backends/__init__.py", line 75, in cursor
+		    cursor = self._cursor()
+		  File "/home/zmichaelov/webapps/duke_exchange/lib/python2.6/django/db/backends/postgresql_psycopg2/base.py", line 136, in _cursor
+		    self.connection = Database.connect(**conn_params)
+		OperationalError: FATAL:  password authentication failed for user "zmichaelov_duke_exchange"
+		
+		
+
+        

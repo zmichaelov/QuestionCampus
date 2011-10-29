@@ -45,7 +45,7 @@ core_urls = (
     
 #Added new entry for pratt and trinity tab
 #My Code is here
-    url(r'^%s%s$' % (_('questions/'), _('social_life/')), app.readers.social_life, name='social_life'),
+    url(r'^%s%s$' % (_('questions/'), _('social/')), app.readers.social, name='social'),
     url(r'^%s%s$' % (_('questions/'), _('athletics/')), app.readers.athletics, name='athletics'),
     url(r'^%s%s$' % (_('questions/'), _('trinity/')), app.readers.trinity, name='trinity'),
     url(r'^%s%s$' % (_('questions/'), _('unanswered/')), app.readers.unanswered, name='unanswered'),

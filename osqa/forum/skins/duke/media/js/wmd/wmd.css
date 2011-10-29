@@ -1,6 +1,6 @@
 body 
 { 
-	background-color: White
+	background-color: #f0f0f0;
 }
 
 .wmd-panel
@@ -17,7 +17,7 @@ body
 #wmd-button-bar 
 {
 	width: 100%;
-	background-color: #ffffff;
+	background-color: #f0f0f0;
 }
 
 #wmd-input 
@@ -47,7 +47,7 @@ body
 	margin-top: 10px;
 	padding: 0px;  
 	height: 20px;
-    background-color:#ffffff;
+    background-color:#f0f0f0;
 }
 
 .wmd-spacer
@@ -68,7 +68,7 @@ body
 	height: 20px; 
 	margin-left: 5px;
 	margin-right: 5px;
-    background-color:#ffffff;
+    background-color: #f0f0f0;
 	position: absolute;
 	background-image: url(images/wmd-buttons.png);
 	background-repeat: no-repeat;
